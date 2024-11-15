@@ -60,6 +60,8 @@ class CustomData:
                 "writing_score": [self.writing_score],
             }
 
+            pd.DataFrame(custom_data_input_dict).to_csv('xx_math.csv')
+
             return pd.DataFrame(custom_data_input_dict)
         
         except Exception as e:
